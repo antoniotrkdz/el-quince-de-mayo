@@ -1,0 +1,16 @@
+{
+  "name": "el-quince-de-mayo",
+  "private": true,
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "scripts": {
+    "dev": "concurrently \"npm run dev --workspace=server\" \"npm run dev --workspace=client\"",
+    "build": "npm run build --workspace=server && npm run build --workspace=client",
+    "db:migrate": "npm run db:migrate --workspace=server"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.4"
+  }
+}
