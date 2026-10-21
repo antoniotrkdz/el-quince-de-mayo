@@ -141,3 +141,6 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Generated template HTML (rebuilt by LibreOffice on demand)
+server/data/
